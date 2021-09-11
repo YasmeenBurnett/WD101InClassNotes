@@ -19,7 +19,7 @@ let x = 0;
 let y = true;
 
 // Object Literal
-let movie ={
+let movie = {
     title: 'Elf',
     rating: 'PG',
     relase: 'Nov 7th 2003'
