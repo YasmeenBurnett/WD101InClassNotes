@@ -3,11 +3,11 @@
 Objects are JS data type that hold key and value pairs of data.
 Objects can hold numbers, strings, booleans, arrays, and other objects, etc.
 */
-// curly brackets denote object, objecst REQUIRE two main attributes: *key and *value
+// curly brackets denote object, objects REQUIRE two main attributes: *key and *value
 let netflix = {
     id: 1,
     name: 'The Office',
-    isRunning:false,
+    isRunning: false,
     season1: {
         seasonInfo: {
             episodeInfo: [{
@@ -36,14 +36,14 @@ let netflix = {
     season3: {}
 };
 
-// Use dot and bracket notation to console.log episode of episode 2
+// Use dot and bracket notation to console.log episodeName of episode 2
 console.log(netflix.season1.seasonInfo.episodeInfo[1].episodeName);
 // Look up how to find index of item in a nest array of objects
 // console.log(netflix.season1.seasonInfo.episodeInfo.indexOf(ep => ep.episodeName.startsWith('B')));
 
 //*JSON Object
 /*
-- JSON stands for: JaveScript Object Notation
+- JSON stands for: JavaScript Object Notation
 - derived from JSON syntax, JSON format is text only.
 - Exists as a string.
     - Useful when fectching data from a server (back-end application or logic).
@@ -52,9 +52,12 @@ console.log(netflix.season1.seasonInfo.episodeInfo[1].episodeName);
 
 
 // Bracket Notation / Property Accessors
-// Property Accessors: dot notation . , bracket notation []
+
+//  Property Accessors: dot notation . , bracket notation []
+
+
 // Created a variable that stores an empty object
-let superHero ={};
+let superHero = {};
 
 // Target object as a whole w/bracket notation, inject/give a key which is a string
 superHero['name'] = 'Hulk';
@@ -77,6 +80,6 @@ let spacedObject = {
     noSpaces: true
 }
 
-// Square brackets is good when we may not be able to use dot notation, BUT is not common
+// Square brackets are good when we may not be able to use dot notation, BUT is not common
 console.log(spacedObject.noSpaces);
 console.log(spacedObject["Spaces Here"]);
